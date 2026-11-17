@@ -11,7 +11,7 @@ import { join } from 'node:path';
 const outDir = process.env.MAKEFUN_OUTPUT_DIR ?? '/output';
 
 const SECTIONS: string[] = [
-  'Plan: sell live booking pages to mobile car detailers who take bookings only by Instagram DM.',
+  'Plan: sell booking pages to mobile car detailers who take bookings only by Instagram DM.',
 
   'Day 1: list 300 detailers in 10 US cities from Google Maps and Instagram, no booking page, prices from their own posts.',
 
@@ -19,7 +19,7 @@ const SECTIONS: string[] = [
 
   'Price: $149 once to keep it live plus $29 a month hosting. Buyer does nothing: no login, no DNS change, page stays on my hosting until they cancel.',
 
-  'Expected case at a 2% buy rate: about 16 sales in 20 selling days, $2,384 setup plus $29 a month from each, about $2,600 by day 30 after $60 hosting and domains.',
+  'Expected case at a 2% buy rate: about 16 sales in 20 days, $2,384 setup plus $29 a month from each, about $2,600 by day 30 after $60 hosting and domains.',
 
   'Kill any city with no sale in 5 days and double the best one.',
 
@@ -27,4 +27,4 @@ const SECTIONS: string[] = [
 ];
 
 mkdirSync(outDir, { recursive: true });
-writeFileSync(join(outDir, 'entry.txt'), SECTIONS.join('\n\n'), 'utf8');
+writeFileSync(join(outDir, 'entry.txt'), SECTIONS.join('\n'), 'utf8');
